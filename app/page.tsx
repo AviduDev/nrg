@@ -1,113 +1,247 @@
 import Image from "next/image";
+import Section from "@/components/Section";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Feature from "@/components/Feature";
+import Service from "@/components/Service";
+import Testimonial from "@/components/Testimonial";
+import Faqs from "@/components/Faqs";
+import Footer from "@/components/Footer";
+import Cta from "@/components/Cta";
+
+// -----------images-----------
+const heroImage =
+  "https://res.cloudinary.com/avidu/image/upload/v1704093459/trg/Hero_Image_nkumcg.webp";
+
+const featureImg1 =
+  "https://res.cloudinary.com/avidu/image/upload/v1710223849/trg/feature_1_xl5vqh.jpg";
+
+const featureImg2 =
+  "https://res.cloudinary.com/avidu/image/upload/v1710223840/trg/feature_2_kvpgv4.jpg";
+
+const featureImg3 =
+  "https://res.cloudinary.com/avidu/image/upload/v1710223843/trg/feature_4_p3pz0q.jpg";
+
+const featureImg4 =
+  "https://res.cloudinary.com/avidu/image/upload/v1710223845/trg/feature_5_iymnnm.jpg";
+
+const serviceImg =
+  "https://res.cloudinary.com/avidu/image/upload/v1710223841/trg/feature_3_ywcjgc.jpg";
+// ----------------------
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="relative flex min-h-screen flex-col items-center justify-between gap-2 p-2 text-blue-900">
+      {/* ----------bg texture---------- */}
+      <div className="absolute inset-0 -z-10 h-full w-full bg-neutral-200 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+      {/* ---------- */}
+
+      {/* --------------------Hero section-------------------- */}
+      <Section section="Section" secName="Introduction" secNumber={1}>
+        <div className="container flex flex-col items-center justify-between">
+          <h1 className="mb-8 text-pretty text-center text-2xl font-black capitalize">
+            land your dream job with a powerfully written resume
+          </h1>
+          <Button className="mb-4">
+            <Link href="/form">Get Your Now</Link>
+          </Button>
+          <Link href="contact" className="underline">
+            Reach Us
+          </Link>
+          <Image
+            src={heroImage}
+            width={1346}
+            height={801}
+            alt=""
+            className="pointer-events-none"
+          />
         </div>
-      </div>
+      </Section>
+      {/* ---------------------------------------- */}
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      {/* --------------------Key benefits-------------------- */}
+      <Section section="Section" secName="Key Benefits" secNumber={2}>
+        <div className="container py-11">
+          <h2 className="mb-2 text-pretty text-center text-xl font-black">
+            Why Not To Use a Generated Resume?
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+          <p className="mb-8 text-center">
+            While auto-generated resumes can be a starting point, a custom
+            resume is an investment in your job search that can significantly
+            increase your chances of landing an interview.
           </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="featureContainer">
+            <Feature
+              imgSrc={featureImg1}
+              cardTitle="Tailored for the Job"
+              cardDsc="You can highlight skills and experiences directly relevant to the specific job description, making your application more targeted and increasing your chances of getting noticed."
+              imgWidth={640}
+              imgHeight={427}
+              imgAlt=""
+              accId="1"
+            ></Feature>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+            <Feature
+              imgSrc={featureImg2}
+              cardTitle="Keywords and Achievements"
+              cardDsc="You can incorporate keywords from the job description to ensure your resume passes Applicant Tracking Systems (ATS) used by many companies. You can also showcase your achievements using strong action verbs and quantifiable results to make a lasting impression."
+              imgWidth={640}
+              imgHeight={427}
+              imgAlt=""
+              accId="2"
+            ></Feature>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+            <Feature
+              imgSrc={featureImg3}
+              cardTitle="Unique Selling Proposition"
+              cardDsc="A custom resume allows you to craft a compelling narrative that showcases your unique value proposition and sets you apart from other applicants."
+              imgWidth={640}
+              imgHeight={427}
+              imgAlt=""
+              accId="3"
+            ></Feature>
+
+            <Feature
+              imgSrc={featureImg4}
+              cardTitle="Well Formatted"
+              cardDsc="uto-generated resumes tend to be generic and lack the specific details a hiring manager looks for."
+              imgWidth={640}
+              imgHeight={427}
+              imgAlt=""
+              accId="4"
+            ></Feature>
+          </div>
+        </div>
+      </Section>
+      {/* ---------------------------------------- */}
+
+      {/* --------------------Our mission-------------------- */}
+      <Section section="Section" secName="Our Mission" secNumber={3}>
+        <div className="container py-11">
+          <q className="text-pretty	text-center text-xl font-bold">
+            Our Mission is To empower job seekers in Sri Lanka with impactful
+            and tailored resumes that land them their dream jobs.
+          </q>
+        </div>
+      </Section>
+      {/* ---------------------------------------- */}
+
+      {/* --------------------Services-------------------- */}
+      <Section section="Section" secName="Provided Services" secNumber={4}>
+        <div className="container py-11">
+          <h2 className="text-pretty pb-2 text-center text-2xl font-black">
+            AIO Solution for Your Job Seeking Journey!
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <Image
+            src={serviceImg}
+            width={640}
+            height={427}
+            alt=""
+            className="pb-6"
+          />
+
+          <div className="cardContainer">
+            <Service
+              cardTtl="Resume Writing"
+              cardDsc="Creating powerful and eye catching resumes that stand out from the crowd. Every resume we create are tailored to your job needs we'll highlight your unique skills and experience to land your dream job, not just any job. Leave the resume writing to the experts and focus on what you do best."
+            />
+
+            <Service
+              cardTtl="Cover Letter Writing"
+              cardDsc="Creating powerful and eye catching resumes that stand out from the crowd. Every resume we create are tailored to your job needs we'll highlight your unique skills and experience to land your dream job, not just any job. Leave the resume writing to the experts and focus on what you do best."
+            />
+
+            <Service
+              cardTtl="Resume Writing"
+              cardDsc="Creating powerful and eye catching resumes that stand out from the crowd. Every resume we create are tailored to your job needs we'll highlight your unique skills and experience to land your dream job, not just any job. Leave the resume writing to the experts and focus on what you do best."
+            />
+          </div>
+        </div>
+      </Section>
+      {/* ---------------------------------------- */}
+
+      {/* --------------------Reviews-------------------- */}
+      <Section section="Section" secName="Customer Testimonials" secNumber={5}>
+        <div className="container py-11">
+          <h2 className="mb-2 text-pretty text-center text-2xl font-black">
+            What People Say About Us
+          </h2>
+
+          <p className="mb-8 text-pretty text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            itaque necessitatibus amet soluta fuga odit recusandae eaque quasi
+            dolorem.
           </p>
-        </a>
-      </div>
+
+          <div className="testiContainer">
+            <Testimonial />
+          </div>
+        </div>
+      </Section>
+      {/* ---------------------------------------- */}
+
+      {/* --------------------Faqs-------------------- */}
+      <Section
+        section="Section"
+        secName="Frequently Asked Questions"
+        secNumber={6}
+      >
+        <div className="container py-11">
+          <h2 className=" mb-2 text-pretty text-center text-2xl font-black">
+            Got Anything to Ask? Look No Further.
+          </h2>
+          <p className="mb-8 text-pretty text-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            vitae ab asperiores, ullam non nostrum possimus odio quae ipsum
+            totam maxime cupiditate! Iste libero quo facere
+          </p>
+
+          <Faqs
+            accId="1"
+            question="How is this possible"
+            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+          />
+
+          <Faqs
+            accId="2"
+            question="How is this possible"
+            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+          />
+
+          <Faqs
+            accId="3"
+            question="How is this possible"
+            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+          />
+
+          <Faqs
+            accId="4"
+            question="How is this possible"
+            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+          />
+
+          <Faqs
+            accId="5"
+            question="How is this possible"
+            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+          />
+        </div>
+      </Section>
+      {/* ---------------------------------------- */}
+
+      {/* --------------------Cta-------------------- */}
+      <Section
+        section="&copy;The Resume Guy"
+        secName="Call To Action"
+        secNumber={2024}
+      >
+        <div className="container flex flex-col justify-between pt-11">
+          <Cta />
+          <Footer />
+        </div>
+      </Section>
+      {/* ----------------------------------------*/}
     </main>
   );
 }
