@@ -1,3 +1,80 @@
+"use client";
+
+import Faqs from "@/components/Faqs";
+import Section from "@/components/Section";
+import Script from "next/script";
+
 export default function Contact() {
-  return <div>Contact</div>;
+  return (
+    <main className="relative flex min-h-screen flex-col items-center justify-between gap-2 p-2 text-blue-900">
+      <Section secName="Contact" secNumber={1} section="Section">
+        <div className="container">
+          <h1 className="mb-8 mt-11 text-center text-2xl font-bold capitalize">
+            Reach Us
+          </h1>
+          <iframe
+            data-tally-src="https://tally.so/embed/3EXdk4?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            width="100%"
+            title="Contact form"
+            height="313"
+          ></iframe>
+
+          <Script
+            id="tally-js"
+            src="https://tally.so/widgets/embed.js"
+            onLoad={() => {
+              Tally.loadEmbeds();
+            }}
+          />
+        </div>
+      </Section>
+
+      <Section
+        section="Section"
+        secName="Frequently Asked Questions"
+        secNumber={2}
+      >
+        <div className="container py-11">
+          <h2 className=" mb-2 text-pretty text-center text-2xl font-black">
+            Got Anything to Ask? Look No Further.
+          </h2>
+          <p className="mb-8 text-pretty text-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            vitae ab asperiores, ullam non nostrum possimus odio quae ipsum
+            totam maxime cupiditate! Iste libero quo facere
+          </p>
+
+          <Faqs
+            accId="1"
+            question="How is this possible"
+            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+          />
+
+          <Faqs
+            accId="2"
+            question="How is this possible"
+            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+          />
+
+          <Faqs
+            accId="3"
+            question="How is this possible"
+            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+          />
+
+          <Faqs
+            accId="4"
+            question="How is this possible"
+            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+          />
+
+          <Faqs
+            accId="5"
+            question="How is this possible"
+            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+          />
+        </div>
+      </Section>
+    </main>
+  );
 }
