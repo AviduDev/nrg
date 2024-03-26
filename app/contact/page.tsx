@@ -1,4 +1,3 @@
-"use client";
 
 import Faqs from "@/components/Faqs";
 import Form from "@/components/Form";
