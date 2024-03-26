@@ -1,6 +1,6 @@
+"use client";
 
 import Faqs from "@/components/Faqs";
-import Form from "@/components/Form";
 import Section from "@/components/Section";
 import Script from "next/script";
 
