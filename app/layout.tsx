@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/toaster";
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={sora.className}>{children}</body>
+      <body className={sora.className}>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }

@@ -1,34 +1,29 @@
 "use client";
 
 import Faqs from "@/components/Faqs";
+import Form from "@/components/Form";
 import Section from "@/components/Section";
 import Script from "next/script";
 
 export default function Contact() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-between gap-2 p-2 text-blue-900">
+      {/* ----------Contact Form Section---------- */}
       <Section secName="Contact" secNumber={1} section="Section">
         <div className="container">
-          <h1 className="mb-8 mt-11 text-center text-2xl font-bold capitalize">
-            Reach Us
-          </h1>
-          <iframe
-            data-tally-src="https://tally.so/embed/3EXdk4?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-            width="100%"
-            title="Contact form"
-            height="313"
-          ></iframe>
+          <Script async src="https://tally.so/widgets/embed.js" />
 
-          <Script
-            id="tally-js"
-            src="https://tally.so/widgets/embed.js"
-            onLoad={() => {
-              Tally.loadEmbeds();
-            }}
-          />
+          <iframe
+            data-tally-src="https://tally.so/embed/3EXdk4?hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            height="300"
+            title="Contact Form"
+            className="min-w-full bg-gray-300"
+          ></iframe>
         </div>
       </Section>
 
+      {/* ----------FAQs Section---------- */}
       <Section
         section="Section"
         secName="Frequently Asked Questions"
