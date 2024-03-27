@@ -15,8 +15,17 @@ export default function Faqs({
   answer: string;
 }) {
   return (
-    <Accordion type="single" collapsible defaultValue="1" className="">
-      <AccordionItem value={accId} className="border border-blue-900 p-2 mb-2 py-0" key={accId}>
+    <Accordion
+      type="single"
+      collapsible
+      defaultValue="1"
+      className="mx-auto md:max-w-xl lg:max-w-3xl"
+    >
+      <AccordionItem
+        value={accId}
+        className="mb-2 border border-blue-900 p-2 py-0"
+        key={accId}
+      >
         <AccordionTrigger>{question}</AccordionTrigger>
         <AccordionContent>{answer}</AccordionContent>
       </AccordionItem>

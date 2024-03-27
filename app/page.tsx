@@ -39,15 +39,15 @@ export default function Home() {
       {/* --------------------Hero section-------------------- */}
       <Section section="Section" secName="Introduction" secNumber={1}>
         <div className="container flex flex-col items-center justify-between">
-          <h1 className="mb-8 text-pretty text-center text-2xl font-black capitalize">
+          <h1 className="mb-8 text-pretty text-center text-2xl font-black capitalize md:text-4xl lg:mt-11 lg:text-6xl xl:mt-28">
             land your dream job with a powerfully written resume
           </h1>
 
-          <Link href="/form" className="w-full">
+          <Link href="/form" className="w-full md:max-w-xl">
             <Button className="mb-4">Get Your Now </Button>
           </Link>
 
-          <Link href="contact" className="underline">
+          <Link href="contact" className="underline lg:mb-12 xl:mb-28">
             Reach Us
           </Link>
           <Image
@@ -65,16 +65,16 @@ export default function Home() {
       {/* --------------------Key benefits-------------------- */}
       <Section section="Section" secName="Key Benefits" secNumber={2}>
         <div className="container py-11">
-          <h2 className="mb-2 text-pretty text-center text-xl font-black">
+          <h2 className="mb-2 text-pretty text-center text-xl font-black md:text-3xl lg:text-5xl">
             Why Not To Use a Generated Resume?
           </h2>
-          <p className="mb-8 text-center">
+          <p className="mx-auto mb-8 text-center md:max-w-3xl lg:mb-12">
             While auto-generated resumes can be a starting point, a custom
             resume is an investment in your job search that can significantly
             increase your chances of landing an interview.
           </p>
 
-          <div className="featureContainer">
+          <div className="featureContainer gap-2 lg:grid lg:grid-cols-2">
             <Feature
               imgSrc={featureImg1}
               cardTitle="Tailored for the Job"
@@ -121,8 +121,8 @@ export default function Home() {
 
       {/* --------------------Our mission-------------------- */}
       <Section section="Section" secName="Our Mission" secNumber={3}>
-        <div className="container py-11">
-          <q className="text-pretty	text-center text-xl font-bold">
+        <div className="container py-11 md:px-6">
+          <q className="text-pretty	text-center text-xl font-bold  md:text-2xl lg:text-4xl xl:text-6xl">
             Our Mission is To empower job seekers in Sri Lanka with impactful
             and tailored resumes that land them their dream jobs.
           </q>
@@ -132,8 +132,8 @@ export default function Home() {
 
       {/* --------------------Services-------------------- */}
       <Section section="Section" secName="Provided Services" secNumber={4}>
-        <div className="container py-11">
-          <h2 className="text-pretty pb-2 text-center text-2xl font-black">
+        <div className="container py-11 md:max-w-3xl">
+          <h2 className="text-pretty pb-2 text-center text-2xl font-black md:pb-4 md:text-3xl lg:text-5xl">
             AIO Solution for Your Job Seeking Journey!
           </h2>
           <Image
@@ -141,7 +141,7 @@ export default function Home() {
             width={640}
             height={427}
             alt=""
-            className="pb-6"
+            className="w-full pb-6 md:mb-6 lg:mb-8"
           />
 
           <div className="cardContainer">
@@ -167,11 +167,11 @@ export default function Home() {
       {/* --------------------Reviews-------------------- */}
       <Section section="Section" secName="Customer Testimonials" secNumber={5}>
         <div className="container py-11">
-          <h2 className="mb-2 text-pretty text-center text-2xl font-black">
+          <h2 className="mb-2 text-pretty text-center text-2xl font-black md:text-3xl lg:text-5xl">
             What People Say About Us
           </h2>
 
-          <p className="mb-8 text-pretty text-center">
+          <p className="mx-auto mb-8 text-pretty text-center md:max-w-2xl lg:mb-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             itaque necessitatibus amet soluta fuga odit recusandae eaque quasi
             dolorem.
@@ -191,10 +191,10 @@ export default function Home() {
         secNumber={6}
       >
         <div className="container py-11">
-          <h2 className=" mb-2 text-pretty text-center text-2xl font-black">
+          <h2 className=" mb-2 text-pretty text-center text-2xl font-black md:text-3xl lg:text-5xl">
             Got Anything to Ask? Look No Further.
           </h2>
-          <p className="mb-8 text-pretty text-center">
+          <p className="mx-auto mb-8 text-pretty text-center md:max-w-3xl">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
             vitae ab asperiores, ullam non nostrum possimus odio quae ipsum
             totam maxime cupiditate! Iste libero quo facere

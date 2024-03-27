@@ -31,7 +31,7 @@ export default function Testimonial() {
     >
       <CarouselContent>
         <CarouselItem>
-          <Card className="flex flex-col justify-between rounded-none border border-blue-900 bg-transparent p-2">
+          <Card className="flex flex-col justify-between rounded-none border border-blue-900 bg-transparent p-2 md:mx-auto md:max-w-xl">
             <CardContent>
               <q className="text-sm">
                 Creating powerful and eye catching resumes that stand out from
@@ -61,7 +61,7 @@ export default function Testimonial() {
           </Card>
         </CarouselItem>
         <CarouselItem>
-          <Card className="flex flex-col justify-between rounded-none border border-blue-900 bg-transparent p-2">
+          <Card className="flex flex-col justify-between rounded-none border border-blue-900 bg-transparent p-2 md:mx-auto md:max-w-xl">
             <CardContent>
               <q className="text-sm">
                 Creating powerful and eye catching resumes that stand out from
@@ -91,7 +91,7 @@ export default function Testimonial() {
           </Card>
         </CarouselItem>
         <CarouselItem>
-          <Card className="flex flex-col justify-between rounded-none border border-blue-900 bg-transparent p-2">
+          <Card className="flex flex-col justify-between rounded-none border border-blue-900 bg-transparent p-2 md:mx-auto md:max-w-xl">
             <CardContent>
               <q className="text-sm">
                 Creating powerful and eye catching resumes that stand out from

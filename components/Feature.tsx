@@ -33,8 +33,8 @@ export default function Feature({
   accId: string;
 }) {
   return (
-    <Card className="borderk-none bg-transparent text-blue-900 shadow-none mb-4">
-      <CardContent className="m-0 p-0 mb-2">
+    <Card className="borderk-none mx-auto mb-4 bg-transparent text-blue-900 shadow-none md:mb-6 md:max-w-2xl lg:mb-8">
+      <CardContent className="m-0 mb-2 p-0">
         <Image
           src={imgSrc}
           width={imgWidth}
@@ -45,9 +45,9 @@ export default function Feature({
       <CardHeader className="m-0 p-0">
         <Accordion type="single" collapsible defaultValue="1">
           <AccordionItem value={accId}>
-            <AccordionTrigger className="m-0 p-0 mb-1">
+            <AccordionTrigger className="m-0 mb-1 p-0">
               <CardTitle className="flex flex-row items-center text-lg font-bold capitalize">
-                <ArrowRightIcon className="size-4" />
+                <ArrowRightIcon className="size-4 lg:size-8" />
                 {cardTitle}
               </CardTitle>
             </AccordionTrigger>

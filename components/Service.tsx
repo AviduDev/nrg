@@ -16,12 +16,12 @@ export default function Service({
   cardDsc: string;
 }) {
   return (
-    <Card className="border-none bg-transparent text-blue-900 shadow-none mb-4">
-      <CardTitle className="flex flex-row items-center text-lg pb-1">
-        <StarFilledIcon className="mx-1" />
+    <Card className="mb-4 border-none bg-transparent text-blue-900 shadow-none">
+      <CardTitle className="flex flex-row items-center pb-1 text-lg">
+        <StarFilledIcon className="mx-1 md:mx-2 md:size-6" />
         {cardTtl}
       </CardTitle>
-      <CardDescription className="pl-4 text-blue-900">
+      <CardDescription className="text-pretty pl-4 text-blue-900 md:max-w-2xl">
         {cardDsc}
       </CardDescription>
     </Card>

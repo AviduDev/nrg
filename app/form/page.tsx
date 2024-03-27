@@ -12,15 +12,18 @@ export default function Form() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-between gap-2 p-2 text-blue-900">
       <Section secName="Form" secNumber={1} section="Section">
-        <div className="container py-11">
-          <h1 className="mb-2 text-pretty text-center text-2xl font-black capitalize">
-            To Get Your Resume, Fill the Form Below{" "}
+        <div className="container flex flex-col items-center py-11">
+          <h1 className="mb-2 text-pretty text-center text-2xl font-black capitalize md:text-4xl lg:mb-8 lg:text-5xl">
+            To Get Your Resume, Fill the Form Below
           </h1>
           <p className="mb-4 text-center">
             If the form is not showing up, please refresh the page using button
             below
           </p>
-          <Button className="mb-8 w-full" onClick={refresh}>
+          <Button
+            className="mb-8 w-full md:mb-12 md:max-w-xl"
+            onClick={refresh}
+          >
             Refresh Page
           </Button>
 
@@ -33,7 +36,7 @@ export default function Form() {
             height="300"
             width="100%"
             title="Resume Details"
-            className=""
+            className="md:max-w-2xl"
           ></iframe>
         </div>
       </Section>
