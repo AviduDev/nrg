@@ -1,22 +1,39 @@
 "use client";
 
 import Section from "@/components/Section";
+import { Button } from "@/components/ui/button";
 import Script from "next/script";
 
 export default function Form() {
+  function refresh() {
+    window.location.reload();
+  }
+
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-between gap-2 p-2 text-blue-900">
       <Section secName="Form" secNumber={1} section="Section">
-        <div className="container">
-          
+        <div className="container py-11">
+          <h1 className="mb-2 text-pretty text-center text-2xl font-black capitalize">
+            To Get Your Resume, Fill the Form Below{" "}
+          </h1>
+          <p className="mb-4 text-center">
+            If the form is not showing up, please refresh the page using button
+            below
+          </p>
+          <Button className="mb-8 w-full" onClick={refresh}>
+            Refresh Page
+          </Button>
+
+          {/* form */}
           <Script src="https://tally.so/widgets/embed.js" />
 
           <iframe
             data-tally-src="https://tally.so/embed/wg9kXP?hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
             height="300"
+            width="100%"
             title="Resume Details"
-            className="min-w-full bg-gray-300"
+            className=""
           ></iframe>
         </div>
       </Section>

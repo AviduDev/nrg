@@ -42,9 +42,11 @@ export default function Home() {
           <h1 className="mb-8 text-pretty text-center text-2xl font-black capitalize">
             land your dream job with a powerfully written resume
           </h1>
-          <Button className="mb-4">
-            <Link href="/form">Get Your Now</Link>
-          </Button>
+
+          <Link href="/form" className="w-full">
+            <Button className="mb-4">Get Your Now </Button>
+          </Link>
+
           <Link href="contact" className="underline">
             Reach Us
           </Link>
@@ -52,6 +54,7 @@ export default function Home() {
             src={heroImage}
             width={1346}
             height={801}
+            priority
             alt=""
             className="pointer-events-none"
           />

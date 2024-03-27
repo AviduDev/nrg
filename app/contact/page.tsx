@@ -9,7 +9,14 @@ export default function Contact() {
     <main className="relative flex min-h-screen flex-col items-center justify-between gap-2 p-2 text-blue-900">
       {/* ----------Contact Form Section---------- */}
       <Section secName="Contact" secNumber={1} section="Section">
-        <div className="container">
+        <div className="p-y-11 container">
+          <h1 className="mb-2 text-pretty text-center text-2xl font-black capitalize">
+            Got anything to ask?
+          </h1>
+          <p className="mb-4 text-center">
+            Fill out the form below and clearly describe your problem, include
+            your contact details so we can get back to you right away.
+          </p>
 
           <Script src="https://tally.so/widgets/embed.js" />
 
@@ -18,7 +25,7 @@ export default function Contact() {
             loading="lazy"
             height="300"
             title="Contact Form"
-            className="min-w-full bg-gray-300"
+            className="min-w-full"
           ></iframe>
         </div>
       </Section>
