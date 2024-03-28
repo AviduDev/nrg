@@ -16,7 +16,7 @@ export default function Service({
   cardDsc: string;
 }) {
   return (
-    <Card className="mb-4 border-none bg-transparent text-blue-900 shadow-none">
+    <Card className="mb-4 border-none bg-transparent text-blue-900 shadow-none lg:flex lg:flex-col lg:justify-between">
       <CardTitle className="flex flex-row items-center pb-1 text-lg">
         <StarFilledIcon className="mx-1 md:mx-2 md:size-6" />
         {cardTtl}

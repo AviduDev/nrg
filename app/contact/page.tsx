@@ -46,53 +46,58 @@ export default function Contact() {
         </div>
       </Section>
 
-      {/* ----------FAQs Section---------- */}
+      {/* --------------------Faqs-------------------- */}
       <Section
         section="Section"
         secName="Frequently Asked Questions"
-        secNumber={2}
+        secNumber={6}
       >
-        <div className="container py-11">
-          <h2 className=" mb-2 text-pretty text-center text-2xl font-black md:text-4xl lg:text-5xl">
-            Got Anything to Ask? Look No Further.
-          </h2>
-          <p className="mx-auto mb-8 text-pretty text-center md:max-w-3xl lg:mb-12">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            vitae ab asperiores, ullam non nostrum possimus odio quae ipsum
-            totam maxime cupiditate! Iste libero quo facere
-          </p>
+        <div className="container py-11 lg:grid lg:max-w-6xl lg:grid-cols-2 lg:gap-4">
+          <div className="textContainer">
+            <h2 className=" mb-2 text-pretty text-center text-2xl font-black md:text-3xl lg:text-start lg:text-5xl">
+              Got Anything to Ask? Look No Further.
+            </h2>
+            <p className="mx-auto mb-8 text-pretty text-center md:max-w-3xl lg:text-start">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              vitae ab asperiores, ullam non nostrum possimus odio quae ipsum
+              totam maxime cupiditate! Iste libero quo facere
+            </p>
+          </div>
 
-          <Faqs
-            accId="1"
-            question="How is this possible"
-            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
-          />
+          <div className="faqs">
+            <Faqs
+              accId="1"
+              question="How is this possible"
+              answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+            />
 
-          <Faqs
-            accId="2"
-            question="How is this possible"
-            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
-          />
+            <Faqs
+              accId="2"
+              question="How is this possible"
+              answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+            />
 
-          <Faqs
-            accId="3"
-            question="How is this possible"
-            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
-          />
+            <Faqs
+              accId="3"
+              question="How is this possible"
+              answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+            />
 
-          <Faqs
-            accId="4"
-            question="How is this possible"
-            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
-          />
+            <Faqs
+              accId="4"
+              question="How is this possible"
+              answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+            />
 
-          <Faqs
-            accId="5"
-            question="How is this possible"
-            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
-          />
+            <Faqs
+              accId="5"
+              question="How is this possible"
+              answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+            />
+          </div>
         </div>
       </Section>
+      {/* ---------------------------------------- */}
     </main>
   );
 }

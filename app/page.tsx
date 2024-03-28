@@ -132,7 +132,7 @@ export default function Home() {
 
       {/* --------------------Services-------------------- */}
       <Section section="Section" secName="Provided Services" secNumber={4}>
-        <div className="container py-11 md:max-w-3xl">
+        <div className="container py-11 md:max-w-6xl">
           <h2 className="text-pretty pb-2 text-center text-2xl font-black md:pb-4 md:text-3xl lg:text-5xl">
             AIO Solution for Your Job Seeking Journey!
           </h2>
@@ -144,7 +144,7 @@ export default function Home() {
             className="w-full pb-6 md:mb-6 lg:mb-8"
           />
 
-          <div className="cardContainer">
+          <div className="cardContainer lg:grid lg:grid-cols-3 lg:gap-2">
             <Service
               cardTtl="Resume Writing"
               cardDsc="Creating powerful and eye catching resumes that stand out from the crowd. Every resume we create are tailored to your job needs we'll highlight your unique skills and experience to land your dream job, not just any job. Leave the resume writing to the experts and focus on what you do best."
@@ -166,16 +166,18 @@ export default function Home() {
 
       {/* --------------------Reviews-------------------- */}
       <Section section="Section" secName="Customer Testimonials" secNumber={5}>
-        <div className="container py-11">
-          <h2 className="mb-2 text-pretty text-center text-2xl font-black md:text-3xl lg:text-5xl">
-            What People Say About Us
-          </h2>
+        <div className="container py-11 lg:grid lg:max-w-6xl lg:grid-cols-2 lg:gap-4">
+          <div className="textContainer lg:text-start">
+            <h2 className="mb-2 text-pretty text-center text-2xl font-black md:text-3xl lg:text-start lg:text-5xl">
+              What People Say About Us
+            </h2>
 
-          <p className="mx-auto mb-8 text-pretty text-center md:max-w-2xl lg:mb-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            itaque necessitatibus amet soluta fuga odit recusandae eaque quasi
-            dolorem.
-          </p>
+            <p className="mx-auto mb-8 text-pretty text-center md:max-w-2xl lg:text-start">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos itaque necessitatibus amet soluta fuga odit recusandae
+              eaque quasi dolorem.
+            </p>
+          </div>
 
           <div className="testiContainer">
             <Testimonial />
@@ -190,45 +192,49 @@ export default function Home() {
         secName="Frequently Asked Questions"
         secNumber={6}
       >
-        <div className="container py-11">
-          <h2 className=" mb-2 text-pretty text-center text-2xl font-black md:text-3xl lg:text-5xl">
-            Got Anything to Ask? Look No Further.
-          </h2>
-          <p className="mx-auto mb-8 text-pretty text-center md:max-w-3xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            vitae ab asperiores, ullam non nostrum possimus odio quae ipsum
-            totam maxime cupiditate! Iste libero quo facere
-          </p>
+        <div className="container py-11 lg:grid lg:max-w-6xl lg:grid-cols-2 lg:gap-4">
+          <div className="textContainer">
+            <h2 className=" mb-2 text-pretty text-center text-2xl font-black md:text-3xl lg:text-start lg:text-5xl">
+              Got Anything to Ask? Look No Further.
+            </h2>
+            <p className="mx-auto mb-8 text-pretty text-center md:max-w-3xl lg:text-start">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              vitae ab asperiores, ullam non nostrum possimus odio quae ipsum
+              totam maxime cupiditate! Iste libero quo facere
+            </p>
+          </div>
 
-          <Faqs
-            accId="1"
-            question="How is this possible"
-            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
-          />
+          <div className="faqs">
+            <Faqs
+              accId="1"
+              question="How is this possible"
+              answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+            />
 
-          <Faqs
-            accId="2"
-            question="How is this possible"
-            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
-          />
+            <Faqs
+              accId="2"
+              question="How is this possible"
+              answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+            />
 
-          <Faqs
-            accId="3"
-            question="How is this possible"
-            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
-          />
+            <Faqs
+              accId="3"
+              question="How is this possible"
+              answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+            />
 
-          <Faqs
-            accId="4"
-            question="How is this possible"
-            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
-          />
+            <Faqs
+              accId="4"
+              question="How is this possible"
+              answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+            />
 
-          <Faqs
-            accId="5"
-            question="How is this possible"
-            answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
-          />
+            <Faqs
+              accId="5"
+              question="How is this possible"
+              answer="vitae ab asperiores, ullam non nostrum possimus odio quae ipsum"
+            />
+          </div>
         </div>
       </Section>
       {/* ---------------------------------------- */}
