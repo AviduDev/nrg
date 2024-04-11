@@ -6,14 +6,16 @@ const sora = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "The Resume Guy",
+    default: "The Resume Guy - Resume/CV Creation Service in Sri Lanka",
     template: "%s | The Resume Guy",
   },
-  description: "Resume/ CV creation service in Sri Lanka",
+  description:
+    "Land your dream job with a powerfully created resume that suits to your needs. We consists of professional idividuals that has vast experience in creating professional grade resumes.",
 
   openGraph: {
-    title: "The Resume Guy",
-    description: "Resume/ CV creation service in Sri Lanka",
+    title: "The Resume Guy - Resume/CV Creation Service in Sri Lanka",
+    description:
+      "Land your dream job with a powerfully created resume that suits to your needs. We consists of professional idividuals that has vast experience in creating professional grade resumes.",
     type: "website",
     url: "https://www.theresumeguy.shop/",
     siteName: "The Resume Guy",
